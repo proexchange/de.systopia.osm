@@ -118,7 +118,7 @@ class CRM_Utils_Geocode_OpenStreetMapCoding {
       $params['country'] = $values['country'];
     }
 
-    // There should be at least a city or postal_code, and a country
+    // There should be at least a city or postal_code and a country
     if (!(array_key_exists('country', $params)
         && (array_key_exists('city', $params) || array_key_exists('postalcode', $params)))) {
       // the error logging is disabled, because it potentially produces a lot of log messages
